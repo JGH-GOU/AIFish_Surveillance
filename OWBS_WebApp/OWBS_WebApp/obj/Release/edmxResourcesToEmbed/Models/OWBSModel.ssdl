@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OWBS_HISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DetectData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="StationFK" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="RecordDT" Type="datetime" Nullable="false" />
+    <Property Name="RecordFile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RecordLen" Type="int" Nullable="false" />
+    <Property Name="Data_json" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Output1_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Output2_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Output3_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Output4_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Output5_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sample_xlsx" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Stage" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Mode" Type="int" Nullable="false" />
+    <Property Name="Dist" Type="int" Nullable="false" />
+    <Property Name="Tls_1_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tls_2_mp4" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Percentage" Type="int" Nullable="false" />
+    <Property Name="BgnDT" Type="datetime" />
+    <Property Name="EndDT" Type="datetime" />
+    <Property Name="SeqNo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IS_CANCEL" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TlsData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StationFK" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="DetectFK" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="BgnTime" Type="int" Nullable="false" />
+    <Property Name="EndTime" Type="int" Nullable="false" />
+    <Property Name="IS_CANCEL" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OWBS_HISModelStoreContainer">
+    <EntitySet Name="DetectData" EntityType="Self.DetectData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TlsData" EntityType="Self.TlsData" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,210 @@
+﻿@{
+    ViewBag.SiteName = Session["StationName"];
+
+    if ((ViewBag.Title == null) || (string.IsNullOrEmpty(ViewBag.Title)))
+    {
+        ViewBag.Title = "搜尋清單";
+    }
+}
+
+@using OWBS_WebApp.Models
+@model QueryDetailModel
+
+<h3>
+    <span class="label label-primary">@ViewBag.Title</span>
+</h3>
+
+<link href="~/Content/videojs/video-js.css" rel="stylesheet" />
+<link href="~/Content/videojs/videojs.markers.css" rel="stylesheet" />
+
+<script src="~/Scripts/videojs/video.js"></script>
+<script src="~/Scripts/vjs-lang/zh-TW.js"></script>
+<script src="~/Scripts/videojs/videojs-markers.js"></script>
+
+
+<script type="text/javascript">
+    var tblTslData;
+    //
+    var player1;
+    var markers1 = @Html.Raw(ViewBag.TimeMarks1);
+    //
+    var player2;
+    var markers2 = @Html.Raw(ViewBag.TimeMarks2);
+
+    $(document).ready(function () {
+        tblTslData = $('#dtTslData').DataTable({
+            //Hide columns index = 0
+            columnDefs: [
+                {
+                    "targets": [1, 2],
+                    "visible": false,
+                    "searchable": false
+                }
+            ],
+            language: {
+                "processing": "處理中...",
+                "loadingRecords": "載入中...",
+                "lengthMenu": "顯示 _MENU_ 項結果",
+                "zeroRecords": "沒有符合的結果",
+                "info": "顯示第 _START_ 至 _END_ 項結果，共 _TOTAL_ 項",
+                "infoEmpty": "顯示第 0 至 0 項結果，共 0 項",
+                "infoFiltered": "(從 _MAX_ 項結果中過濾)",
+                "infoPostFix": "",
+                "search": "搜尋:",
+                "paginate": {
+                    "first": "第一頁",
+                    "previous": "上一頁",
+                    "next": "下一頁",
+                    "last": "最後一頁"
+                },
+                "aria": {
+                    "sortAscending": ": 升冪排列",
+                    "sortDescending": ": 降冪排列"
+                }
+            }
+        });
+
+        player1 = videojs('myVideo1', {
+            controls: true,
+            autoplay: false,
+        });
+
+        //load the marker1 plugin
+        player1.markers({
+            markerTip: {
+                display: true,
+                text: function (marker) {
+                    return marker.text;
+                }
+            },
+            breakOverlay: {
+                display: true,
+                displayTime: 4,
+                text: function (marker) {
+                    return marker.text;
+                }
+            },
+            onMarkerReached: function (marker) {
+                $('.event-list').append("<div>marker reached: " + marker.text + "</div>");
+
+            },
+            onMarkerClick: function (marker) {
+                $('.event-list').append("<div>marker clicked: " + marker.text + "</div>");
+
+            },
+            markers: markers1
+        });
+
+        player2 = videojs('myVideo2', {
+            controls: true,
+            autoplay: false,
+        });
+
+        //load the marker2 plugin
+        player2.markers({
+            markerTip: {
+                display: true,
+                text: function (marker) {
+                    return marker.text;
+                }
+            },
+            breakOverlay: {
+                display: true,
+                displayTime: 4,
+                text: function (marker) {
+                    return marker.text;
+                }
+            },
+            onMarkerReached: function (marker) {
+                $('.event-list').append("<div>marker reached: " + marker.text + "</div>");
+
+            },
+            onMarkerClick: function (marker) {
+                $('.event-list').append("<div>marker clicked: " + marker.text + "</div>");
+
+            },
+            markers: markers2
+        });
+    });
+
+    function PlayMark(ABgnTime) {
+        player1.currentTime(ABgnTime);
+        player2.currentTime(ABgnTime);
+    }
+</script>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken();
+    
+    <div class="form-horizontal">
+        <hr />
+
+        <div class="form-group">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="form-group">
+                    <video id="myVideo1" controls preload="none" class="video-js vjs-default-skin vjs-big-play-centered" width="480" height="360">
+                        <source src="@(Model.RecordFile)" type='video/mp4'>
+                        @*<source src="~/Video/2019_0916_191303.mp4" type="video/mp4" />*@
+                    </video>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">                
+                <div class="form-group">
+                    <video id="myVideo2" controls preload="none" class="video-js vjs-default-skin vjs-big-play-centered" width="480" height="360">
+                        <source src="@(Model.FrameFile)" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+            @if (Model.TslModel != null)
+            {
+                <table id="dtTslData" name="dtTslData" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>序號</th>
+                            <th>開始秒數</th>
+                            <th>結束秒數</th>
+                            <th>開始時間</th>
+                            <th>結束時間</th>
+                            <th>長度(秒)</th>
+                            <th>長度佔全影片百分比(%)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (QueryTslModel item in Model.TslModel)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.SeqNo)</td>
+                                <td>@Html.DisplayFor(modelItem => item.BgnTime)</td>
+                                <td>@Html.DisplayFor(modelItem => item.EndTime)</td>                                
+                                <td>@Html.DisplayFor(modelItem => item.BgnShow)</td>
+                                <td>@Html.DisplayFor(modelItem => item.EndShow)</td>
+                                <td>@Html.DisplayFor(modelItem => item.LenTime)</td>
+                                <td>@item.Percent.ToString("#0.00")</td>
+                                <td>
+                                    <button type="button" class="btn btn-success" onclick='PlayMark(@item.BgnTime);'>播放</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+}
+
+<br />
+
+<div>
+    @Html.ActionLink("回到搜尋結果", "Index", "Home")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

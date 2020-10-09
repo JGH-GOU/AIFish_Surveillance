@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "養好魚 - 智能縮時搜尋監控系統";
+}
+
+@using OWBS_WebApp.Models
+@model QueryResultModel 
+
+@*
+<h3>
+    <span class="label label-primary">@ViewBag.Title</span>
+</h3>
+*@
+
+<style type="text/css">
+    td.details-control {
+        cursor: pointer;
+    }
+</style>
+
+<script type="text/javascript">
+    var tblQueryData;
+
+    $(document).ready(function () {
+        $('#BgnDate').datetimepicker({           
+            timepicker: false,
+            format: 'Y/m/d',
+            lang: 'zh-TW'
+        });
+
+        $('#EndDate').datetimepicker({
+            timepicker: false,
+            format: 'Y/m/d',
+            lang: 'zh-TW'
+        });
+
+        tblQueryData = $('#dtQueryData').DataTable({
+            language: {
+                "processing": "處理中...",
+                "loadingRecords": "載入中...",
+                "lengthMenu": "顯示 _MENU_ 項結果",
+                "zeroRecords": "沒有符合的結果",
+                "info": "顯示第 _START_ 至 _END_ 項結果，共 _TOTAL_ 項",
+                "infoEmpty": "顯示第 0 至 0 項結果，共 0 項",
+                "infoFiltered": "(從 _MAX_ 項結果中過濾)",
+                "infoPostFix": "",
+                "search": "搜尋:",
+                "paginate": {
+                    "first": "第一頁",
+                    "previous": "上一頁",
+                    "next": "下一頁",
+                    "last": "最後一頁"
+                },
+                "aria": {
+                    "sortAscending": ": 升冪排列",
+                    "sortDescending": ": 降冪排列"
+                }
+            }
+        });
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken();
+
+    <div class="form-horizontal">
+        <br />
+        <br />
+        <br />
+
+        <div class="form-group">
+            @Html.Label("魚場地點", htmlAttributes: new { @class = "control-label col-xs-3 col-sm-3 col-md-2 col-lg-2" })
+            <select id="StationFK" name="StationFK" class="form-control col-xs-9 col-sm-9 col-md-10 col-lg-10" placeholder="型號名稱">
+                @if (Model.StationItems.Count > 0)
+                {
+                    foreach (SelectListItem station_item in Model.StationItems)
+                    {
+                        if (station_item.Value == Model.StationFK)
+                        {
+                            <option value="@station_item.Value" selected="selected">@station_item.Text</option>
+                        }
+                        else
+                        {
+                            <option value="@station_item.Value">@station_item.Text</option>
+                        }
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("錄影時間", htmlAttributes: new { @class = "control-label col-xs-3 col-sm-3 col-md-2 col-lg-2" })
+            @Html.EditorFor(modelItem => modelItem.BgnDate, new { htmlAttributes = new { @class = "form-control col-xs-9 col-sm-9 col-md-10 col-lg-10", placeholder = Html.DisplayNameFor(modelItem => modelItem.BgnDate) } })
+            @Html.ValidationMessageFor(modelItem => modelItem.BgnDate, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("    ", htmlAttributes: new { @class = "control-label col-xs-3 col-sm-3 col-md-2 col-lg-2" })
+            @Html.EditorFor(modelItem => modelItem.EndDate, new { htmlAttributes = new { @class = "form-control col-xs-9 col-sm-9 col-md-10 col-lg-10", placeholder = Html.DisplayNameFor(modelItem => modelItem.EndDate) } })
+            @Html.ValidationMessageFor(modelItem => modelItem.EndDate, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("有魚影像百分比%", htmlAttributes: new { @class = "control-label col-xs-3 col-sm-3 col-md-2 col-lg-2" })
+            @Html.EditorFor(modelItem => modelItem.Percentage, new { htmlAttributes = new { @class = "form-control col-xs-9 col-sm-9 col-md-10 col-lg-10", placeholder = Html.DisplayNameFor(modelItem => modelItem.EndDate) } })
+            @Html.ValidationMessageFor(modelItem => modelItem.Percentage, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("  ", htmlAttributes: new { @class = "control-label col-xs-3 col-sm-3 col-md-2 col-lg-2" })
+            <input type="submit" value="查詢" class="btn btn-danger form-control col-xs-9 col-sm-9 col-md-10 col-lg-10" />
+        </div>
+
+        <br />
+
+        @if (Model.ListModel != null)
+        {
+            <table id="dtQueryData" name="dtQueryData" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>地點</th>
+                        <th>錄影時間</th>
+                        <th>錄影長度</th>
+                        <th>有魚影像百分比(%)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (QueryListModel item in Model.ListModel)
+                    {
+                        string a_title = item.StationName + "  " + item.RecordDT.ToString("yyyy/MM/dd HH:mm"); 
+                        
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.StationName)</td>
+                            <td>@Html.DisplayFor(modelItem => item.RecordDT)</td>
+                            <td>@Html.DisplayFor(modelItem => item.ShowLen)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Percentage)</td>
+                            <td>@Html.ActionLink("播收", "Detail", "Home", new { id = item.ID, ATitle = a_title }, new { @class = "btn btn-success" })</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OWBS_HISModelStoreContainer" CdmEntityContainer="OWBSEntities">
+    <EntitySetMapping Name="DetectData">
+      <EntityTypeMapping TypeName="OWBS_HISModel.DetectData">
+        <MappingFragment StoreEntitySet="DetectData">
+          <ScalarProperty Name="IS_CANCEL" ColumnName="IS_CANCEL" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+          <ScalarProperty Name="EndDT" ColumnName="EndDT" />
+          <ScalarProperty Name="BgnDT" ColumnName="BgnDT" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="Tls_2_mp4" ColumnName="Tls_2_mp4" />
+          <ScalarProperty Name="Tls_1_mp4" ColumnName="Tls_1_mp4" />
+          <ScalarProperty Name="Dist" ColumnName="Dist" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="Sample_xlsx" ColumnName="Sample_xlsx" />
+          <ScalarProperty Name="Output5_mp4" ColumnName="Output5_mp4" />
+          <ScalarProperty Name="Output4_mp4" ColumnName="Output4_mp4" />
+          <ScalarProperty Name="Output3_mp4" ColumnName="Output3_mp4" />
+          <ScalarProperty Name="Output2_mp4" ColumnName="Output2_mp4" />
+          <ScalarProperty Name="Output1_mp4" ColumnName="Output1_mp4" />
+          <ScalarProperty Name="Data_json" ColumnName="Data_json" />
+          <ScalarProperty Name="RecordLen" ColumnName="RecordLen" />
+          <ScalarProperty Name="RecordFile" ColumnName="RecordFile" />
+          <ScalarProperty Name="RecordDT" ColumnName="RecordDT" />
+          <ScalarProperty Name="StationFK" ColumnName="StationFK" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TlsData">
+      <EntityTypeMapping TypeName="OWBS_HISModel.TlsData">
+        <MappingFragment StoreEntitySet="TlsData">
+          <ScalarProperty Name="IS_CANCEL" ColumnName="IS_CANCEL" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="BgnTime" ColumnName="BgnTime" />
+          <ScalarProperty Name="DetectFK" ColumnName="DetectFK" />
+          <ScalarProperty Name="StationFK" ColumnName="StationFK" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
