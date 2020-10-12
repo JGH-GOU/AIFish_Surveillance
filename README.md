@@ -17,8 +17,8 @@
 
 <div align=center><img width="486" height="254" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
 
-# 提案成果  
-下圖是養好魚團隊在此提案中所開發的網頁介面,  
+# 開發成果  
+下圖是本團隊在此提案中所開發的網頁介面,  
 此介面可根據魚塭地點, 錄影日期時間, 有魚蹤影像比例等條件設置來搜尋想要觀看的影片.  
 搜尋結果也可進一步排序: 點選下方表格的欄位, 例如: 地點、錄影時間、錄影長度、有魚影像百分比%這幾項, 可支援各欄位由大到小或由小到大切換排序, 也支援文字搜尋, 例如魚種搜尋. 選好影片後點選撥放可打開影片進行觀看.  
   
@@ -38,17 +38,21 @@
 
 # 本提案所開發的程式說明
 
-我們所開發的程式分成兩部分, 可根據開發者需求自由抽換AI模型或是更改網頁介面風格.  
+我們所開發的程式分成三部分, 可根據開發者需求自由抽換AI模型或是更改網頁介面風格.  
 
-# Part I: 後端AI辨識  
+# Part I: 後端AI物件辨識  
 請見資料夾: AI_Identify_Program  
 主體語言: python & tensorflow  
 環境安裝設置與執行: 請見「環境設定與縮時搜尋程式執行.pdf」(請注意安裝PYTHON套件時須使用一樣的版本)  
+
 
 # Part II: 前端網頁與AI辨識結果所存之資料庫連結  
 請見資料夾: OWBS_WebApp  
 主體語言: C# & JavaScript  
 設置環境: Visual Studio 2017 WEB開發套件 & SQL試用版  
 
-如果您對此專案有興趣或有任何想法建議, 歡迎與我們聯繫: lien@hysontech.tw
+# Part III: 全自動水下影像除霧技術  
+全自動水下影像除霧技術建置於AI-Hub平台，相關連結請見: https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002
+
+如果您對此專案有興趣或有任何想法建議, 歡迎與我們聯繫: gubycat@gmail.com
   
