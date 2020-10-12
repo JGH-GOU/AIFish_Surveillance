@@ -13,7 +13,7 @@
 除了提高雲端智能搜尋引擎搜尋的精準度外, 同時也提供漁民朋友一更清晰的魚隻強化影像，以利後續的魚病分析作業。
 
 ![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg)
-<div align=center><img width="150" height="150" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
+<div align=center><img width="972" height="508" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
 
 # 提案成果  
 下圖是養好魚團隊在此提案中所開發的網頁介面,  
