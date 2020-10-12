@@ -12,7 +12,7 @@
 同時發展了一項全自動水下影像除霧技術來進一步強化所接收到的水下影像, 並結合進雲端人工智能搜尋引擎提高魚群影像的辨識精準度,
 除了提高雲端智能搜尋引擎搜尋的精準度外, 同時也提供漁民朋友一更清晰的魚隻強化影像，以利後續的魚病分析作業。
 
-<div align=center><img width="243" height="127" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
+<div align=center><img width="486" height="254" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
 
 # 提案成果  
 下圖是養好魚團隊在此提案中所開發的網頁介面,  
