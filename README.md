@@ -81,13 +81,19 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法我們可有效提升水下生物識別的精準度，並與雲端搜尋引擎系統的人工智能模型做整合，其影響效果與API介面如下圖：
   
 Default    | Left       | Center     | Right
------------| :--------- | :--------: | ---------: 
+-----------| :--------: | :--------: | :--------: 
          x |          x |          x |          x 
 xxxxxxxxxx | xxxxxxxxxx | xxxxxxxxxx | xxxxxxxxxx 
   
+Age           | Time  | Food | Gold | Requirement
+--------------|:-----:|-----:| ----:|------------------------
+Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2
+Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2
+Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2    
+  
   
 <div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
-
+  
   
 如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。
   
