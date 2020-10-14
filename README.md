@@ -26,11 +26,11 @@
 
 也能夠點選”有魚影像百分比(%)”欄位自動由小到大或是由大到小排序, 可加快搜尋.  
 
-<div align=center><img width="773" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
+<div align=center><img width="468" height="709" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
 
 或是輸入魚影像百分比搜尋過濾出超過使用者設定輸入值的影片.  
 
-![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_5.JPG)  
+<div align=center><img width="468" height="585" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_5.JPG"/></div>   
 
 **AI智能魚蹤搜尋標籤與縮時撥放**  
 點開十字圓型標記後可看到影片
