@@ -9,8 +9,8 @@
 然而實測使用時，漁民反映影像過多真正有魚群活動的部分少，當有狀況發生想調閱歷史錄像瞭解過去狀況時，
 需要以人眼花費許多時間才能找到魚群活動的各個時間點做比較，此外不同於單純的陸地環境，在多變且雜質眾多的水下養殖環境中，
 光折射與霧化等問題使得所取得的水下影像解析度經常模糊不清，造成人眼難以判斷魚群的狀況，
-為了解決些問題，本提案將開發一網頁介面，讓養殖戶可以透過網頁登入搜尋魚塭水下影像的歷史紀錄， 
-接著回放歷史影片，對於所選取的影片，我們將在雲端運用AI智能技術自動找出影片中養殖魚與魚群活動的時間點， 
+為了解決些問題，本提案將開發一網頁介面，讓養殖戶可以透過網頁登入搜尋魚塭水下影像的歷史紀錄，
+接著回放歷史影片，對於所選取的影片，我們將在雲端運用AI智能技術自動找出影片中養殖魚與魚群活動的時間點，
 透過本案所開發的智能縮時搜尋功能與辨識指標，引導漁民迅速找到並檢查魚群的活動狀態，以減少不必要的人眼搜尋時間浪費。
 同時發展了一項全自動水下影像除霧技術來進一步強化所接收到的水下影像，並結合進雲端人工智能搜尋引擎提高魚群影像的辨識精準度，
 除了提高雲端智能搜尋引擎搜尋的精準度外，同時也提供漁民朋友一更清晰的魚隻強化影像，以利後續的魚病分析作業。
@@ -37,15 +37,15 @@
 左方影片為加上智能指標時間軸的原始影片  
 右方影片為加上智能指標時間軸且經過AI辨識後的影片  
 
-![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_2.JPG)  
+<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_2.JPG"/></div>   
 
 點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點，自動連續播放只有魚蹤跡的部分(影片進度條中標示紅色表示有魚蹤跡的部分)忽略掉沒有魚的部分(跳掉，影片進度條中標示白色表示沒有魚蹤跡的部分)。  
-  
-![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG)  
+   
+<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG"/></div>   
 
 也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序。  
-  
-![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.JPG)  
+   
+<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.JPG"/></div>   
 
 # 本提案所開發的程式說明
 
@@ -74,7 +74,7 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 # Part III: 全自動水下影像除霧技術  
 全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，其API介面如下圖：
 
-![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG)  
+<div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
 
 如果您對此專案有興趣或有任何想法建議，歡迎[與我們聯繫](gubycat@gmail.com).
   
