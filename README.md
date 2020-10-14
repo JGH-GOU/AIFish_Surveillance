@@ -88,5 +88,5 @@ Difference  | **+3.2%** | **+10.9%**
 <div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>   
   
   
-如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。  
+如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫： gubycat@gmail.com。  
   
