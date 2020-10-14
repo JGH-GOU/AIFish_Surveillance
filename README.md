@@ -84,14 +84,11 @@ YOLOv5        | mAP@.5  | mAP@.5:.95
 --------------|:-----:|:-----:
 強化前的辨識率    | 94.2% |  61.1%
 強化後的辨識率    | 97.4%  |  72.0%
-Difference  | <font color="blue"> +3.2% </font> | <font color="blue"> +10.9% </font>    
+Difference  | **+3.2%** | **+10.9%**    
   
-<font color=#0000FF>深藍色</font>  
-- ![#1589F0](+3.2%) `#1589F0`
   
 <div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
   
   
-  
-如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。
+如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。  
   
