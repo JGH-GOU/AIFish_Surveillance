@@ -45,7 +45,7 @@
 
 也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序。  
    
-<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.JPG"/></div>   
+<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
 
 # 本提案所開發的程式說明
 
@@ -56,14 +56,13 @@
 主體語言: python & tensorflow  
 環境安裝設置與執行: 請見「環境設定與縮時搜尋程式執行.pdf」(請注意安裝PYTHON套件時須使用一樣的版本)  
 
-Label請參考:  
-[LabelImg GitHub link](https://github.com/tzutalin/labelImg)  
+Label請參考： [LabelImg GitHub link](https://github.com/tzutalin/labelImg)  
 訓練程式與指令請參考:  
 1. [Train FasterRCNN Model](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)  
 2. [Train Yolo v4, v3 and v2 for Windows and Linux](https://github.com/AlexeyAB/darknet?fbclid=IwAR1BGCnZhWHPnFdcDcEEzf6LPf0KaPDZ6YyP8a6R1wYiXVCY28irmr5_YNk)  
 
 Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完成的模型在「inference_graph」資料夾中，可使用「tank」資料夾中的兩隻影片進行測試。 
-請執行'object_detection.py'
+請執行`object_detection.py`
 若需更換成您自行訓練的模型，請將您的模型置換在「inference_graph」資料夾中。  
 
 # Part II: 前端網頁與AI辨識結果所存之資料庫連結  
