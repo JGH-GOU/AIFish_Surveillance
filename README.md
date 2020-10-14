@@ -36,14 +36,12 @@
   
   
 **AI智能魚蹤搜尋標籤與縮時撥放**  
-點開十字圓型標記後可看到影片  
-左方影片為加上智能指標時間軸的原始影片  
-右方影片為加上智能指標時間軸且經過AI辨識後的影片  
+點開十字圓型標記後可看到影片，左方影片為加上智能指標時間軸的原始影片，而右方影片為加上智能指標時間軸且經過AI辨識後的影片。  
 
 <div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_2.JPG"/></div>   
 
   
-點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點，自動連續播放只有魚蹤跡的部分(影片進度條中標示紅色表示有魚蹤跡的部分)忽略掉沒有魚的部分(跳掉，影片進度條中標示白色表示沒有魚蹤跡的部分)。  
+點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點，自動連續播放只有魚蹤跡的部分(影片進度條中標示紅色表示有魚蹤跡的部分)忽略掉沒有魚的部分(此片段會自動忽略跳掉，影片進度條中標示白色表示沒有魚蹤跡的部分)。  
    
 <div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG"/></div>   
 
@@ -81,13 +79,13 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法與雲端搜尋引擎系統的人工智能模型做整合後，可有效提升水下生物識別的精準度，其影響辨識率的效果與操作API介面如下圖：
   
 使用YOLOv5辨識魚群  | mAP@.5 | mAP@.5:.95 
---------------|:-----:|:-----:
-**強化前**的辨識率  | 94.2%  |  61.1%
-**強化後**的辨識率  | 97.4%  |  72.0%
+--------------|:-----:|:-----: 
+**強化前**的辨識率  | 94.2%  |  61.1% 
+**強化後**的辨識率  | 97.4%  |  72.0% 
 Difference  | **+3.2%** | **+10.9%**    
   
   
-<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>   
   
   
 如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。  
