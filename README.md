@@ -80,17 +80,13 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 # Part III: 全自動水下影像除霧技術  
 全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法我們可有效提升水下生物識別的精準度，並與雲端搜尋引擎系統的人工智能模型做整合，其影響效果與API介面如下圖：
   
-Default    | Left       | Center     | Right
------------| :--------: | :--------: | :--------: 
-         x |          x |          x |          x 
-xxxxxxxxxx | xxxxxxxxxx | xxxxxxxxxx | xxxxxxxxxx 
-  
 YOLOv5        | mAP@.5  | mAP@.5:.95 
 --------------|:-----:|:-----:
 強化前的辨識率    | 94.2% |  61.1%
 強化後的辨識率    | 97.4%  |  72.0%
 Difference  | <font color="blue"> +3.2% </font> | <font color="blue"> +10.9% </font>    
   
+- ![#1589F0](+3.2%) `#1589F0`
   
 <div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
   
