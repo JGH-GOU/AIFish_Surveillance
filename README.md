@@ -62,8 +62,9 @@
 主體語言: python & tensorflow  
 環境安裝設置與執行: 請見「環境設定與縮時搜尋程式執行.pdf」(請注意安裝PYTHON套件時須使用一樣的版本)  
 
-Label請參考： [LabelImg GitHub link](https://github.com/tzutalin/labelImg)  
-訓練程式與指令請參考:  
+以下使我們有使用到的程式與流程：
+Label程式下載與操作流程請參考： [LabelImg](https://github.com/tzutalin/labelImg)  
+訓練程式與指令流程請參考:  
 1. [Train FasterRCNN Model](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)  
 2. [Train Yolo v4, v3 and v2 for Windows and Linux](https://github.com/AlexeyAB/darknet?fbclid=IwAR1BGCnZhWHPnFdcDcEEzf6LPf0KaPDZ6YyP8a6R1wYiXVCY28irmr5_YNk)  
 
@@ -77,7 +78,13 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 設置環境: Visual Studio 2017 WEB開發套件 & SQL試用版  
 
 # Part III: 全自動水下影像除霧技術  
-全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法我們可有效提升水下生物識別的精準度，並與雲端搜尋引擎系統的人工智能模型做整合，其API介面如下圖：
+全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法我們可有效提升水下生物識別的精準度，並與雲端搜尋引擎系統的人工智能模型做整合，其影響效果與API介面如下圖：
+  
+| 参数 |详细解释|备注|
+| - | - |
+| -l | use a long listing format |以长列表方式显示（显示出文件/文件夹详细信息） |
+| -t | sort by modification time |按照修改时间排序（默认最近被修改的文件/文件夹排在最前面） |
+|-r | reverse order while sorting |逆序排列|  
   
 <div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
 
