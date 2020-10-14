@@ -85,11 +85,11 @@ Default    | Left       | Center     | Right
          x |          x |          x |          x 
 xxxxxxxxxx | xxxxxxxxxx | xxxxxxxxxx | xxxxxxxxxx 
   
-Age           | Time  | Food | Gold | Requirement
---------------|:-----:|-----:| ----:|------------------------
-Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2
-Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2
-Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2    
+YOLOv5        | mAP@.5  | mAP@.5:.95 
+--------------|:-----:|:-----:
+強化前的辨識率    | 94.2% |  61.1%
+強化後的辨識率    | 97.4%  |  72.0%
+Difference  | <font color="blue"> +3.2% </font> | <font color="blue"> +10.9% </font>    
   
   
 <div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
