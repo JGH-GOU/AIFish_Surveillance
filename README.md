@@ -59,10 +59,12 @@
 Label請參考:  
 [LabelImg GitHub link](https://github.com/tzutalin/labelImg)  
 訓練程式與指令請參考:  
-1.[Train FasterRCNN Model](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)  
-2.[Train Yolo v4, v3 and v2 for Windows and Linux](https://github.com/AlexeyAB/darknet?fbclid=IwAR1BGCnZhWHPnFdcDcEEzf6LPf0KaPDZ6YyP8a6R1wYiXVCY28irmr5_YNk)  
+1. [Train FasterRCNN Model](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)  
+2. [Train Yolo v4, v3 and v2 for Windows and Linux](https://github.com/AlexeyAB/darknet?fbclid=IwAR1BGCnZhWHPnFdcDcEEzf6LPf0KaPDZ6YyP8a6R1wYiXVCY28irmr5_YNk)  
 
-Inference請見「AI_Identify_Program」資料夾  
+Inference請見「AI_Identify_Program」資料夾, 我們以有提供訓練完成的模型在「inference_graph」資料夾中, 可使用「tank」資料夾中的兩隻影片進行測試. 
+請執行'object_detection.py'
+若需更換成您自行訓練的模型, 請將您的模型置換在「inference_graph」資料夾中.  
 
 # Part II: 前端網頁與AI辨識結果所存之資料庫連結  
 請見資料夾: OWBS_WebApp  
@@ -70,9 +72,7 @@ Inference請見「AI_Identify_Program」資料夾
 設置環境: Visual Studio 2017 WEB開發套件 & SQL試用版  
 
 # Part III: 全自動水下影像除霧技術  
-全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結.
-
-其API介面如下圖:
+全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結, 其API介面如下圖:
 
 ![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG)  
 
