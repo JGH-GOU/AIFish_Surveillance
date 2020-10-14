@@ -19,32 +19,50 @@
 
 # 開發成果  
 下圖是本團隊在此提案中所開發的網頁介面,  
-此介面可根據魚塭地點, 錄影日期時間, 有魚蹤影像比例等條件設置來搜尋想要觀看的影片.  
-搜尋結果也可進一步排序: 點選下方表格的欄位, 例如: 地點、錄影時間、錄影長度、有魚影像百分比%這幾項, 可支援各欄位由大到小或由小到大切換排序, 也支援文字搜尋, 例如魚種搜尋. 選好影片後點選撥放可打開影片進行觀看.  
+此介面可根據每個魚塭不同的錄影日期時間, 有魚蹤影像比例等條件設置來搜尋想要觀看的影片.  
+搜尋結果也可進一步排序: 點選下方表格的欄位, 例如: 錄影時間、錄影長度、有魚影像百分比%這幾項, 可支援各欄位由大到小或由小到大切換排序, 也支援文字搜尋, 例如魚種搜尋. 選好影片後點選撥放可打開影片進行觀看, 我們的後端系統會自動將魚隻百分比與樣本數都太少的影片初步過濾不顯示在前端介面, 初步過濾可節省搜尋時間.  
   
-![image](https://github.com/Coopathon2019/12_BetterFishFarm/blob/master/PIC1.JPG)  
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_1.JPG)  
+
+也能夠點選”有魚影像百分比(%)”欄位自動由小到大或是由大到小排序, 可加快搜尋.  
+
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG)  
+
+或是輸入魚影像百分比搜尋過濾出超過使用者設定輸入值的影片.  
+
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_5.JPG)  
 
 **AI智能魚蹤搜尋標籤與縮時撥放**  
+點開十字圓型標記後可看到影片
 左方影片為加上智能指標時間軸的原始影片  
 右方影片為加上智能指標時間軸且經過AI辨識後的影片  
 
-點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點, 自動連續播放只有魚蹤跡的部分忽略掉沒有魚的部分(跳掉).  
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_2.JPG)  
+
+點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點, 自動連續播放只有魚蹤跡的部分(影片進度條中標示紅色表示有魚蹤跡的部分)忽略掉沒有魚的部分(跳掉，影片進度條中標示白色表示沒有魚蹤跡的部分).  
   
-![image](https://github.com/Coopathon2019/12_BetterFishFarm/blob/master/PIC4.JPG)  
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG)  
 
 也可以根據下方表格的排序點選想要觀看的時間點, 影片上方會出現您所點選的標籤資訊, 同時下方表格也支援各欄位由大到小或由小到大切換排序.  
   
-![image](https://github.com/Coopathon2019/12_BetterFishFarm/blob/master/PIC3.JPG)  
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.JPG)  
 
 # 本提案所開發的程式說明
 
 我們所開發的程式分成三部分, 可根據開發者需求自由抽換AI模型或是更改網頁介面風格.  
 
 # Part I: 後端AI物件辨識  
-請見資料夾: AI_Identify_Program  
+請見資料夾: AI_Identify_Program (Inference程式) 
 主體語言: python & tensorflow  
 環境安裝設置與執行: 請見「環境設定與縮時搜尋程式執行.pdf」(請注意安裝PYTHON套件時須使用一樣的版本)  
 
+Label請參考:  
+[LabelImg GitHub link](https://github.com/tzutalin/labelImg)  
+訓練程式與指令請參考:  
+1.[Train FasterRCNN Model](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)  
+2.[Train Yolo v4, v3 and v2 for Windows and Linux](https://github.com/AlexeyAB/darknet?fbclid=IwAR1BGCnZhWHPnFdcDcEEzf6LPf0KaPDZ6YyP8a6R1wYiXVCY28irmr5_YNk)  
+
+Inference請見「AI_Identify_Program」資料夾  
 
 # Part II: 前端網頁與AI辨識結果所存之資料庫連結  
 請見資料夾: OWBS_WebApp  
@@ -52,7 +70,11 @@
 設置環境: Visual Studio 2017 WEB開發套件 & SQL試用版  
 
 # Part III: 全自動水下影像除霧技術  
-全自動水下影像除霧技術建置於AI-Hub平台，相關連結請見: https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002
+全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結.
+
+其API介面如下圖:
+
+![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG)  
 
 如果您對此專案有興趣或有任何想法建議, 歡迎與我們聯繫: gubycat@gmail.com
   
