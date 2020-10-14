@@ -28,7 +28,8 @@
 也能夠點選「有魚影像百分比(%)」欄位自動由小到大或是由大到小排序，可加快搜尋。  
   
 <div align=center><img width="468" height="709" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
-  
+![Image]("https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG")
+
   
 或是輸入魚影像百分比搜尋過濾出超過使用者設定輸入值的影片。  
   
