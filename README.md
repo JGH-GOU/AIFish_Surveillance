@@ -15,7 +15,6 @@
 同時發展了一項全自動水下影像除霧技術來進一步強化所接收到的水下影像，並結合進雲端人工智能搜尋引擎提高魚群影像的辨識精準度，
 除了提高雲端智能搜尋引擎搜尋的精準度外，同時也提供漁民朋友一更清晰的魚隻強化影像，以利後續的魚病分析作業。
 
-<div align=center><img width="486" height="254" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
 <div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Problems.jpg"/></div>
   
 # 系統開發成果  
@@ -23,18 +22,17 @@
 此介面可根據每個魚塭不同的錄影日期時間，有魚蹤影像比例等條件設置來搜尋想要觀看的影片。  
 搜尋結果也可進一步排序: 點選下方表格的欄位，例如：錄影時間、錄影長度、有魚影像百分比%這幾項，可支援各欄位由大到小或由小到大切換排序，也支援文字搜尋，例如魚種搜尋。選好影片後點選撥放可打開影片進行觀看，我們的後端系統會自動將魚隻百分比與樣本數都太少的影片初步過濾不顯示在前端介面，初步過濾可節省搜尋時間。  
   
-<div align=center><img width="466" height="714" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_1.JPG"/></div>  
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_1.JPG"/></div>  
   
   
 也能夠點選「有魚影像百分比(%)」欄位自動由小到大或是由大到小排序，可加快搜尋。  
   
-<div align=center><img width="468" height="709" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
-<div align=center><src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
 
   
 或是輸入魚影像百分比搜尋過濾出超過使用者設定輸入值的影片。  
   
-<div align=center><img width="468" height="585" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_5.JPG"/></div>   
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_5.JPG"/></div>   
   
   
 **AI智能魚蹤搜尋標籤與縮時撥放**  
@@ -42,7 +40,7 @@
 左方影片為加上智能指標時間軸的原始影片  
 右方影片為加上智能指標時間軸且經過AI辨識後的影片  
 
-<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_2.JPG"/></div>   
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_2.JPG"/></div>   
 
   
 點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點，自動連續播放只有魚蹤跡的部分(影片進度條中標示紅色表示有魚蹤跡的部分)忽略掉沒有魚的部分(跳掉，影片進度條中標示白色表示沒有魚蹤跡的部分)。  
