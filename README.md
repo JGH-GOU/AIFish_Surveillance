@@ -43,7 +43,7 @@
    
 <div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG"/></div>   
 
-也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序。  
+也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序，包含智能標籤、每個標籤連動的長度、有魚蹤跡百分比(長度佔全影片百分比)等均可自由進行排序。  
    
 <div align=center><img width="878" height="502" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
 
@@ -63,7 +63,7 @@ Label請參考： [LabelImg GitHub link](https://github.com/tzutalin/labelImg)
 
 Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完成的模型在「inference_graph」資料夾中，可使用「tank」資料夾中的兩隻影片進行測試。 
 請執行`object_detection.py`
-若需更換成您自行訓練的模型，請將您的模型置換在「inference_graph」資料夾中。  
+可選取影片進行推論，而推論的結果將置能標籤位置存在txt檔，可讓Part II的SQL儲存智能標籤資料與AI運算結果、C#抓資料庫數據並連動更新前端介面。若需更換成您自行訓練的模型，請將您的模型置換在「inference_graph」資料夾中。  
 
 # Part II: 前端網頁與AI辨識結果所存之資料庫連結  
 請見資料夾: OWBS_WebApp  
