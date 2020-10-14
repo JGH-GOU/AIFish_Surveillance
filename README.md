@@ -23,15 +23,15 @@
 搜尋結果也可進一步排序: 點選下方表格的欄位，例如：錄影時間、錄影長度、有魚影像百分比%這幾項，可支援各欄位由大到小或由小到大切換排序，也支援文字搜尋，例如魚種搜尋。選好影片後點選撥放可打開影片進行觀看，我們的後端系統會自動將魚隻百分比與樣本數都太少的影片初步過濾不顯示在前端介面，初步過濾可節省搜尋時間。  
   
 <div align=center><img width="466" height="714" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_1.JPG"/></div>  
-
+  
 也能夠點選「有魚影像百分比(%)」欄位自動由小到大或是由大到小排序，可加快搜尋。  
-
+  
 <div align=center><img width="468" height="709" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_4.JPG"/></div>  
-
+  
 或是輸入魚影像百分比搜尋過濾出超過使用者設定輸入值的影片。  
-
+  
 <div align=center><img width="468" height="585" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_5.JPG"/></div>   
-
+  
 **AI智能魚蹤搜尋標籤與縮時撥放**  
 點開十字圓型標記後可看到影片
 左方影片為加上智能指標時間軸的原始影片  
@@ -46,7 +46,7 @@
 也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序，包含智能標籤、每個標籤連動的長度、有魚蹤跡百分比(長度佔全影片百分比)等均可自由進行排序。  
    
 <div align=center><img width="878" height="502" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
-
+  
 # 本提案所開發的程式說明
 
 我們所開發的程式分成三部分，可根據開發者需求自由抽換AI模型或是更改網頁介面風格。  
@@ -72,8 +72,8 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 
 # Part III: 全自動水下影像除霧技術  
 全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，其API介面如下圖：
-
+  
 <div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
-
-如果您對此專案有興趣或有任何想法建議，歡迎[與我們聯繫](gubycat@gmail.com).
+  
+如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。
   
