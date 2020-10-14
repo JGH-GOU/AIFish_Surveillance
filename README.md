@@ -45,7 +45,7 @@
 
 也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序。  
    
-<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
+<div align=center><img width="878" height="502" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
 
 # 本提案所開發的程式說明
 
