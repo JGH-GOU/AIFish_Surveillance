@@ -45,12 +45,12 @@
   
 點選「智能縮時撥放」按鈕會根據AI所計算有魚活動時間點，自動連續播放只有魚蹤跡的部分(影片進度條中標示紅色表示有魚蹤跡的部分)忽略掉沒有魚的部分(跳掉，影片進度條中標示白色表示沒有魚蹤跡的部分)。  
    
-<div align=center><img width="733" height="747" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG"/></div>   
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_3.JPG"/></div>   
 
   
 也可以根據下方表格的排序點選想要觀看的時間點，影片上方會出現您所點選的標籤資訊，同時下方表格也支援各欄位由大到小或由小到大切換排序，包含智能標籤、每個標籤連動的長度、有魚蹤跡百分比(長度佔全影片百分比)等均可自由進行排序。  
    
-<div align=center><img width="878" height="502" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_7.jpg"/></div>   
   
   
 # 本提案所開發的程式說明
@@ -87,7 +87,7 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 Difference  | **+3.2%** | **+10.9%**    
   
   
-<div align=center><img width="1003" height="744" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
+<div align=center><img src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_8.JPG"/></div>  
   
   
 如果您對此專案有興趣或有任何想法建議，歡迎與我們聯繫：gubycat@gmail.com。  
