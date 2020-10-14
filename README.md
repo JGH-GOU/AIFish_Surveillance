@@ -68,7 +68,7 @@
 
 Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完成的模型在「inference_graph」資料夾中，可使用「tank」資料夾中的兩隻影片進行測試。 
 請執行`object_detection.py`
-可選取影片進行推論，而推論的結果將置能標籤位置存在txt檔，可讓Part II的SQL儲存智能標籤資料與AI運算結果、C#抓資料庫數據並連動更新前端介面。若需更換成您自行訓練的模型，請將您的模型置換在「inference_graph」資料夾中。  
+可選取影片進行推論，而推論的結果將置能標籤位置存在txt檔，可讓Part II的SQL儲存智能標籤資料與AI運算結果、C#抓資料庫數據並連動更新前端介面。若需更換成您自行訓練的模型，請將您的模型置換在「inference_graph」資料夾中，更多操作步驟請見「環境設定與縮時搜尋程式執行.pdf」。  
 
 # Part II: 前端網頁與AI辨識結果所存之資料庫連結  
 請見資料夾: OWBS_WebApp  
