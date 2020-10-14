@@ -22,7 +22,7 @@
 此介面可根據每個魚塭不同的錄影日期時間, 有魚蹤影像比例等條件設置來搜尋想要觀看的影片.  
 搜尋結果也可進一步排序: 點選下方表格的欄位, 例如: 錄影時間、錄影長度、有魚影像百分比%這幾項, 可支援各欄位由大到小或由小到大切換排序, 也支援文字搜尋, 例如魚種搜尋. 選好影片後點選撥放可打開影片進行觀看, 我們的後端系統會自動將魚隻百分比與樣本數都太少的影片初步過濾不顯示在前端介面, 初步過濾可節省搜尋時間.  
   
-![image](https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_1.JPG)  
+<div align=center><img width="350" height="535" src="https://github.com/JGH-GOU/AIFish_Surveillance/blob/main/Demo_PIC/Interface_1.JPG"/></div>  
 
 也能夠點選”有魚影像百分比(%)”欄位自動由小到大或是由大到小排序, 可加快搜尋.  
 
