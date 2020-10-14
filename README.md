@@ -78,7 +78,7 @@ Inference請見「AI_Identify_Program」資料夾，我們以有提供訓練完�
 設置環境: Visual Studio 2017 WEB開發套件可開啟專案 & SQL試用版設定後端資料庫  
 
 # Part III: 全自動水下影像除霧技術  
-全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法我們可有效提升水下生物識別的精準度，並與雲端搜尋引擎系統的人工智能模型做整合，其影響效果與API介面如下圖：
+全自動水下影像除霧技術建置於AI-Hub平台，請見[水下影像除霧技術](https://aihub.org.tw/platform/algorithm/4037b4ca-0ab2-11eb-a48e-0242ac120002)連結，利用此方法與雲端搜尋引擎系統的人工智能模型做整合後，可有效提升水下生物識別的精準度，其影響辨識率的效果與操作API介面如下圖：
   
 使用YOLOv5辨識魚群  | mAP@.5 | mAP@.5:.95 
 --------------|:-----:|:-----:
